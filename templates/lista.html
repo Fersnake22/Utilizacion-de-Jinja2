@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <table border = 1>
+         <thead>
+            <td>palabra</td>
+            <td>significado</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["palabra"]}}</td>
+               <td>{{row["significado"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Volver a la pagina de inicio</a>
+      
+   </body>
+</html>
